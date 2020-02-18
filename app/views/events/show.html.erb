@@ -1,0 +1,27 @@
+<section>
+  <div class="container">
+    <div class="m-3 p-2">
+      <h1 class="d-flex justify-content-center"><%= @current_event.title%></h1>
+    </div>
+    <div class="">
+      <p>créateur de l'évènement : <%= @current_event.user.email %></p>
+    </div>
+  </div>
+</section>
+
+<section class="border-top border-bottom">
+  <div class="container">
+    <div class="d-flex flex-column p-4 mt-2">
+      <p>l'évènement débutera le : <%= @current_event.start_date %></p>
+      <p>Il aura lieu au : <%= @current_event.location %></p>
+      <p>prix : <%= @current_event.price %>€</p>
+    </div>
+  </div
+</section>
+
+<section>
+  <div class="container">
+    <p>description de l'évènement: <%= @current_event.description %></p>
+    <p>Nombre de participant : <@current_user.attendance.count></p>
+  </div>
+</section>
